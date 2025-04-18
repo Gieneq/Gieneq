@@ -1,6 +1,18 @@
 # 👋 Hi, I'm Piotr!
 
-I'm an engineer with a deep background in embedded RTOS systems, now fully driving into the world of Rust. Currently focusing on Rust — backend, tooling, and systems programming.
+I'm a systems engineer with an embedded background — now focused on **Rust backend, tooling, and systems development**.
+
+To me, systems engineering means owning the full path: From hardware and firmware, through protocols and tooling, to services and user interfaces.  I've designed drivers, built cloud-connected firmware, created CLI and web tools, and automated real-world processes.
+
+These days, I build with Rust — 4–10 hours daily since late 2024. I’m now shifting fully into **Rust-focused roles** — backend services, infrastructure, or developer tooling — where I can apply the same precision and full-stack thinking embedded demanded, but in modern, scalable systems.
+
+## 🦀 Why Rust?
+
+- I love **type safety and reliability**
+- I thrive in **low-level, performance-aware environments**
+- I write **tested, maintainable code** with both unit and integration tests
+- I enjoy building **tools and services that actually solve problems**
+- And I’ve built **real systems** already — not tutorials
 
 ## 🦀 Rust Projects
 
@@ -127,8 +139,6 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
     - Integrated logging and monitoring of sterilization process data for QA
   
 </details>
-
----
 
 ## 🗃️ Past Engineering Projects
 
@@ -274,7 +284,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 ### 🧩 [RGB Audio Spectrum Display](https://github.com/Gieneq/Audio-Spectrum-Display) (personal)
 
 <p align="center">
-  <img width="280" alt="Main RGB Spectrum Display" src="res/asd.png">
+  <img width="280" alt="Main RGB Spectrum Display" src="res/asd.PNG">
   <br />
   <img width="280" alt="LCD control unit for spectrum display" src="res/vis.PNG">
 </p>
@@ -334,7 +344,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 ### 🏭 Remote-Controlled Exploration Boat for Historical Research (company)
 
 <p align="center">
-  <img width="400" alt="Representative mine shaft view" src="res/repr_luban.png">
+  <img width="400" alt="Representative mine shaft view" src="res/repr_luban.PNG">
 </p>
 <p align="center">
   <em>Representative image. Similar view was recorded by our vessel inside the flooded shaft. <a href="https://gazetawroclawska.pl/eksploruja-sztolnie-ukryte-przez-hitlerowcow-w-1945-roku-czy-kamienna-gora-w-lubaniu-moze-skrywac-zloto-wroclawia/gh/c5-18644463"> Source: gazetawroclawska. </a></em>
