@@ -4,7 +4,7 @@ I'm a systems engineer with an embedded background — now focused on **Rust bac
 
 To me, systems engineering means owning the full path: From hardware and firmware, through protocols and tooling, to services and user interfaces.  I've designed drivers, built cloud-connected firmware, created CLI and web tools, and automated real-world processes.
 
-These days, I build with Rust — 4–10 hours daily since late 2024. I’m now shifting fully into **Rust-focused roles** — backend services, infrastructure, or developer tooling — where I can apply the same precision and full-stack thinking embedded demanded, but in modern, scalable systems.
+I began exploring Rust in 2023, and **since late 2024**, I’ve been coding in it 4–10 hours daily — both professionally and in personal projects. I’m now shifting fully into **Rust-focused roles** — backend services, infrastructure, or developer tooling — where I can apply the same precision and full-stack thinking embedded demanded, but in modern, scalable systems.
 
 ## 🦀 Why Rust?
 
@@ -29,25 +29,26 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 **Key features:**
 - Asynchronous server built with Tokio
 - WGPU-powered game client with real-time rendering
-- CLi client alternative
+- CLI client alternative
 - TCP communication using a JSON-based protocol
 - Fully tested: unit and integration tests for client–server interaction
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    A multiplayer mini-game built from scratch in Rust, featuring a custom async game server and real-time graphical and CLI clients.  
-    The game includes a lobby system, game state transitions, basic NPC behavior, and separate GUI roles depending on player type.
-
-    #### Project Scope
-    - Async server handling multiple client connections and managing game world state 
-    - In-game chat system distinguishing between server and client messages
-    - Shared client logic with both CLI and WGPU-based GUI frontends
-    - Decoupled client connections from in-game character state
-    - Procedural world generation
-    - Basic NPC AI logic and movement
-    - Game state transitions: lobby → active game → summary
-    - Reward system and scoring logic for winning players
+  <p><strong>Overview</strong></p>
+  <p>A multiplayer mini-game built from scratch in Rust, featuring a custom async game server and real-time graphical and CLI clients.  </p>
+  <p>The game includes a lobby system, game state transitions, basic NPC behavior, and separate GUI roles depending on player type.</p>
+  <p><strong>Project Scope</strong></p>
+  <ul>
+    <li>Async server handling multiple client connections and managing game world state </li>
+    <li>In-game chat system distinguishing between server and client messages</li>
+    <li>Shared client logic with both CLI and WGPU-based GUI frontends</li>
+    <li>Decoupled client connections from in-game character state</li>
+    <li>Procedural world generation</li>
+    <li>Basic NPC AI logic and movement</li>
+    <li>Game state transitions: lobby → active game → summary</li>
+    <li>Reward system and scoring logic for winning players</li>
+  </ul>
 </details>
 
 ---
@@ -68,17 +69,17 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    A personal project inspired by my wife’s hobby.
-    Users can upload an image, select available DMC colors, and receive a ready-to-print pattern along with a Bill of Materials (BOM) listing all required diamond colors and quantities.
-
-    #### Project Scope
-    - REST API with endpoints for uploading images and tracking processing status  
-    - Image analysis and dithering using DMC-compatible palettes  
-    - Color quantization and matching using perceptual color distance
-    - Generates high-resolution PDF output for printing 
-    - Optional UI planned for future use
-  
+  <p><strong>Overview</strong></p>
+  <p>A personal project inspired by my wife’s hobby.</p>
+  <p>Users can upload an image, select available DMC colors, and receive a ready-to-print pattern along with a Bill of Materials (BOM) listing all required diamond colors and quantities.</p>
+  <p><strong>Project Scope</strong></p>
+  <ul>
+    <li>REST API with endpoints for uploading images and tracking processing status  </li>
+    <li>Image analysis and dithering using DMC-compatible palettes  </li>
+    <li>Color quantization and matching using perceptual color distance</li>
+    <li>Generates high-resolution PDF output for printing </li>
+    <li>Optional UI planned for future use</li>
+  </ul>
 </details>
 
 ---
@@ -100,17 +101,17 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    Command-line utility for uploading binary data to external NOR Flash on ARM-based devices using a J-Link debugging probe. 
-    The upload process is mediated through a dedicated C-based upload API integrated into the firmware, which is called directly from the host via GDB during a debug session.
-
-    #### Responsibilities
-    - Studied and leveraged GDB’s ability to call target-resident C functions via `call` commands
-    - Wrote a set of C functions exposed in the target firmware to receive and write memory chunks
-    - Implemented GDB subprocess automation and communication from Rust
-    - Designed chunked, page-aligned transfer with status feedback
-    - Built a robust CLI around this mechanism for ease of use in production/test environments
-
+  <p><strong>Overview</strong></p>
+  <p>Command-line utility for uploading binary data to external NOR Flash on ARM-based devices using a J-Link debugging probe. </p>
+  <p>The upload process is mediated through a dedicated C-based upload API integrated into the firmware, which is called directly from the host via GDB during a debug session.</p>
+  <p><strong>Responsibilities</strong></p>
+  <ul>
+    <li>Studied and leveraged GDB’s ability to call target-resident C functions via `call` commands</li>
+    <li>Wrote a set of C functions exposed in the target firmware to receive and write memory chunks</li>
+    <li>Implemented GDB subprocess automation and communication from Rust</li>
+    <li>Designed chunked, page-aligned transfer with status feedback</li>
+    <li>Built a robust CLI around this mechanism for ease of use in production/test environments</li>
+  </ul>
 </details>
 
 ---
@@ -122,22 +123,21 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 **Key features:**
 - Connects to sterilizers via USB Modbus
 - Remote device control over serial and HTTP
-- Control the device remotely
 - Logs and monitors sterilization process
 - Functional testing and validation
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    At the final stage of steam sterilizer production, each unit undergoes functionality testing.
-    This Rust-based backend was developed as an experimental alternative to the existing Python backend, aiming to improve maintainability.
-
-    #### Responsibilities
-    - Implemented Modbus communication over USB CDC ACM
-    - Designed an abstraction layer over Modbus to simplify device control
-    - Enabled remote control of multiple devices in parallel
-    - Integrated logging and monitoring of sterilization process data for QA
-  
+  <p><strong>Overview</strong></p>
+  <p>At the final stage of steam sterilizer production, each unit undergoes functionality testing.</p>
+  <p>This Rust-based backend was developed as an experimental alternative to the existing Python backend, aiming to improve maintainability.</p>
+  <p><strong>Responsibilities</strong></p>
+  <ul>
+    <li>Implemented Modbus communication over USB CDC ACM</li>
+    <li>Designed an abstraction layer over Modbus to simplify device control</li>
+    <li>Enabled remote control of multiple devices in parallel</li>
+    <li>Integrated logging and monitoring of sterilization process data for QA</li>
+  </ul>
 </details>
 
 ## 🗃️ Past Engineering Projects
@@ -157,35 +157,54 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    Firmware for an Internet-connected steam sterilizer. Responsible for end-to-end embedded system design, including control logic, connectivity, and modern responsible user interface.
-
-    #### Responsibilities
-    - Low level memory driver:
-      - Shared FMC bus: NOR + PSRAM with Read/Write managment
-      - Buffering and caching
-      - External memory loading
-      - Failsafe filesystem
-      - Fragmentation monitoring
-    - WiFi connectivity:
-      - Manage WiFi connection
-      - Register device in Azure DPS using HTTPS
-      - Send telementry, chunking & receive notification from IoT Hub via MQTTS
-      - Monitor new firmware & do OTA updates with backup
-      - RED Directive & service tools
-    - Implement HMI project:
-      - Custom TouchGFX components
-      - Optimized rendering
-      - External doubleframebuffer, external graphics data, FLASH write operations managment
-    - sterilization process control:
-      - Implementation PID / histheresis
-      - Heaters, pumps, valves control
-      - Optimization physical process for speed
-    - USB dualrole:
-      - Host MSC to store processes data, download firmware
-      - Device CDC/ACM Modbus for production, testing and service
-    - LED strips:
-      - RGB animations
+  <p><strong>Overview</strong></p>
+  <p>Firmware for an Internet-connected steam sterilizer. Responsible for end-to-end embedded system design, including control logic, connectivity, and modern responsible user interface.</p>
+  <p><strong>Responsibilities</strong></p>
+  <ul>
+    <li>Low-level memory driver:
+      <ul>
+        <li>Shared FMC bus: NOR + PSRAM with Read/Write management</li>
+        <li>Buffering and caching</li>
+        <li>External memory loading</li>
+        <li>Failsafe filesystem</li>
+        <li>Fragmentation monitoring</li>
+      </ul>
+    </li>
+    <li>WiFi connectivity:
+      <ul>
+        <li>Manage WiFi connection</li>
+        <li>Register device in Azure DPS using HTTPS</li>
+        <li>Send telemetry, chunking & receive notification from IoT Hub via MQTTS</li>
+        <li>Monitor new firmware & do OTA updates with backup</li>
+        <li>RED Directive & service tools</li>
+      </ul>
+    </li>
+    <li>Implement HMI project:
+      <ul>
+        <li>Custom TouchGFX components</li>
+        <li>Optimized rendering</li>
+        <li>External double framebuffer, external graphics data, FLASH write operations management</li>
+      </ul>
+    </li>
+    <li>Sterilization process control:
+      <ul>
+        <li>Implementation of PID and hysteresis</li>
+        <li>Heaters, pumps, valves control</li>
+        <li>Optimizing physical process for speed</li>
+      </ul>
+    </li>
+    <li>USB dual-role:
+      <ul>
+        <li>Host MSC to store process data, download firmware</li>
+        <li>Device CDC/ACM Modbus for production, testing, and service</li>
+      </ul>
+    </li>
+    <li>LED strips:
+      <ul>
+        <li>RGB animations</li>
+      </ul>
+    </li>
+  </ul>
 </details>
 
 ### 🏭 [CMake & Dev Container steam sterilizer firmware](https://github.com/Gieneq/STM32U5_CMake_DevContainer_TouchGFX_Template) (company)
@@ -201,22 +220,21 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    Embedded projects are notoriously difficult to transfer between machines or contributors.  
-    This setup isolates the entire development environment inside a Docker DevContainer, making the project reproducible and portable across systems.  
-    It replaces heavier IDEs (e.g., Eclipse-based tools) with a modern, faster workflow using VS Code and Linux-based builds.
-    
-    Due to USB device mapping limitations in containers, the GDB server is run outside the container — but integrates cleanly with the VS Code debugging workflow.
-
-
-    #### Responsibilities
-    - Indepth knowledge how ST-Link and J-Link works
-    - Built a CMake-based project structure compatible with STM32CubeMX and TouchGFX codegen
-    - Integrated remote debugging through ST-Link and J-Link 
-    - Wrote custom VS Code tasks and launch configurations for building, flashing, and testing
-    - Automated host-side unit tests with Google Test  
-    - Analyzed .elf and .map files to enable reliable external memory loading (NOR/PSRAM via FMC) using GDB
-    - Replaced legacy IDEs with reproducible, Docker-based environment  
+  <p><strong>Overview</strong></p>
+  <p>Embedded projects are notoriously difficult to transfer between machines or contributors.  </p>
+  <p>This setup isolates the entire development environment inside a Docker DevContainer, making the project reproducible and portable across systems.  </p>
+  <p>It replaces heavier IDEs (e.g., Eclipse-based tools) with a modern, faster workflow using VS Code and Linux-based builds.</p>
+  <p>Due to USB device mapping limitations in containers, the GDB server is run outside the container — but integrates cleanly with the VS Code debugging workflow.</p>
+  <p><strong>Responsibilities</strong></p>
+  <ul>
+    <li>Indepth knowledge how ST-Link and J-Link works
+    <li>Built a CMake-based project structure compatible with STM32CubeMX and TouchGFX codegen</li>
+    <li>Integrated remote debugging through ST-Link and J-Link </li>
+    <li>Wrote custom VS Code tasks and launch configurations for building, flashing, and testing</li>
+    <li>Automated host-side unit tests with Google Test  </li>
+    <li>Analyzed .elf and .map files to enable reliable external memory loading (NOR/PSRAM via FMC) using GDB</li>
+    <li>Replaced legacy IDEs with reproducible, Docker-based environment  </li>
+  </ul>
 </details>
 
   ### 🧩 [WiFi AccessPoint E-Ink Image Frame](https://github.com/Gieneq/C3eInkFrame) (personal)
@@ -236,17 +254,18 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
   <details>
     <summary>Details</summary>
-      #### Overview
-      A standalone E-Ink picture frame with built-in access point and web interface.  
-      Designed to display user-uploaded images without needing external services.  
-      The device serves a fully self-contained web app (HTML/CSS/JS), allowing users to crop, scale, dither, and upload images directly to the ESP32 for display.
-
-      #### Project Scope
-      - Developed embedded web server with JavaScript-based frontend  
-      - Implemented captive portal for instant access after connecting  
-      - Created image processing pipeline: crop → grayscale → dithering → upload  
-      - Parsed and displayed PNG images on E-Ink display using custom rendering logic  
-      - Designed minimal, UI-first UX for non-technical users  
+    <p><strong>Overview</strong></p>
+    <p>A standalone E-Ink picture frame with built-in access point and web interface.  </p>
+    <p>Designed to display user-uploaded images without needing external services.  </p>
+    <p>The device serves a fully self-contained web app (HTML/CSS/JS), allowing users to crop, scale, dither, and upload images directly to the ESP32 for display.</p>
+    <p><strong>Project Scope</strong></p>
+    <ul>
+      <li>Developed embedded web server with JavaScript-based frontend  </li>
+      <li>Implemented captive portal for instant access after connecting  </li>
+      <li>Created image processing pipeline: crop → grayscale → dithering → upload  </li>
+      <li>Parsed and displayed PNG images on E-Ink display using custom rendering logic  </li>
+      <li>Designed minimal, UI-first UX for non-technical users  </li>
+    </ul>
   </details>
 
 ### 🧩 [Python RPG game approach](https://github.com/Gieneq/LochPythonRPG) (personal)
@@ -267,18 +286,19 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    A 2D RPG engine inspired by classic top-down games like *Zelda*.  
-    Built in Python with Pygame, it features a layered tile-based world, animated entities, and a component-driven object system.  
-    While the project remains in development, it has laid a strong foundation for a full pixel-art RPG engine.
-
-    #### Project Scope
-    - Implemented an extensible object model using Python properties and composition  
-    - Integrated TMX/TSX map parsing for Tiled-based level design  
-    - Built a collision system with layered obstacle detection and visual debugging  
-    - Developed pixel-art rendering pipeline with global scaling logic  
-    - Introduced modular animations and entity state management  
-    - Designed and integrated custom tilesets and graphics (WIP)
+    <p><strong>Overview</strong></p>
+    <p>A 2D RPG engine inspired by classic top-down games like *Zelda*.  </p>
+    <p>Built in Python with Pygame, it features a layered tile-based world, animated entities, and a component-driven object system. </p> 
+    <p>While the project remains in development, it has laid a strong foundation for a full pixel-art RPG engine.</p>
+    <p><strong>Project Scope</strong></p>
+    <ul>
+      <li>Implemented an extensible object model using Python properties and composition  </li>
+      <li>Integrated TMX/TSX map parsing for Tiled-based level design  </li>
+      <li>Built a collision system with layered obstacle detection and visual debugging  </li>
+      <li>Developed pixel-art rendering pipeline with global scaling logic  </li>
+      <li>Introduced modular animations and entity state management  </li>
+      <li>Designed and integrated custom tilesets and graphics (WIP)</li>
+    </ul>
 </details>
 
 ### 🧩 [RGB Audio Spectrum Display](https://github.com/Gieneq/Audio-Spectrum-Display) (personal)
@@ -306,19 +326,20 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    This project visualizes audio input using real-time FFT on an ESP32 platform, driving a 399-pixel RGB LED matrix with animated effects.  
-    The latest version includes an LCD display for control and settings, making it fully standalone.  
-    It’s designed for living room aesthetics, performance, and modular expandability — including future raw WiFi-based audio streaming directly to the device.
-
-    #### Project Scope
-    - Designed signal chain for analog/digital audio sampling
-  - Wrote fixed-point FFT and windowing implementation (optimized for MCU)
-  - Implemented a visual engine for multiple spectrum and waveform styles
-  - Built a custom UI using LCD and rotary input
-  - Created enclosure using 3D printing and transparent paneling
-  - Managed timing, memory, and DMA for stable animation performance
-  - Shared project publicly with detailed build instructions and firmware
+  <p><strong>Overview</strong></p>
+  <p>This project visualizes audio input using real-time FFT on an ESP32 platform, driving a 399-pixel RGB LED matrix with animated effects.  </p>
+  <p>The latest version includes an LCD display for control and settings, making it fully standalone. </p> 
+  <p>It’s designed for living room aesthetics, performance, and modular expandability — including future raw WiFi-based audio streaming directly to the device.</p>
+  <p><strong>Project Scope</strong></p>
+  <ul>
+    <li>Designed signal chain for analog/digital audio sampling</li>
+    <li>Wrote fixed-point FFT and windowing implementation (optimized for MCU)</li>
+    <li>Implemented a visual engine for multiple spectrum and waveform styles</li>
+    <li>Built a custom UI using LCD and rotary input</li>
+    <li>Created enclosure using 3D printing and transparent paneling</li>
+    <li>Managed timing, memory, and DMA for stable animation performance</li>
+    <li>Shared project publicly with detailed build instructions and firmware</li>
+  </ul>
 </details>
 
 ### 🧩 Bluetooth Macro Keyboard (personal)
@@ -332,13 +353,14 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    A compact, Bluetooth-enabled macro keyboard built using an ESP32 board.  
-    Designed to trigger custom key sequences for automation, shortcuts, and productivity tasks.
-
-    #### Project Scope
-    - Implemented HID over Bluetooth communication  
-    - Programmed hotkey mapping logic using C++
+  <p><strong>Overview</strong></p>
+  <p>A compact, Bluetooth-enabled macro keyboard built using an ESP32 board.  </p>
+  <p>Designed to trigger custom key sequences for automation, shortcuts, and productivity tasks.</p>
+  <p><strong>Project Scope</strong></p>
+  <ul>
+    <li>Implemented HID over Bluetooth communication  </li>
+    <li>Programmed hotkey mapping logic using C++</li>
+  </ul>
 </details>
 
 ### 🏭 Remote-Controlled Exploration Boat for Historical Research (company)
@@ -360,16 +382,17 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    A commissioned project to explore a flooded mineshaft located ~20 meters underground in Lubań, Poland.  
-    The vessel was designed to descend into the shaft via 10cm drill and transmit video footage for archaeological and safety assessment.
-
-    #### Project Scope
-    - Designed custom electronics and control system for vessel navigation  
-    - Integrated video capture with LED lighting for visibility  
-    - Built a watertight enclosure and propulsion system (partially successful)  
-    - Supply power and control signals from the surface  
-    - Contributed to one of the first serious technical attempts to explore the shaft — later fully successful in follow-up expeditions
+  <p><strong>Overview</strong></p>
+  <p>A commissioned project to explore a flooded mineshaft located ~20 meters underground in Lubań, Poland.  </p>
+  <p>The vessel was designed to descend into the shaft via 10cm drill and transmit video footage for archaeological and safety assessment.</p>
+  <p><strong>Project Scope</strong></p>
+  <ul>
+    <li>Designed custom electronics and control system for vessel navigation  </li>
+    <li>Integrated video capture with LED lighting for visibility  </li>
+    <li>Built a watertight enclosure and propulsion system (partially successful)  </li>
+    <li>Supply power and control signals from the surface  </li>
+    <li>Contributed to one of the first serious technical attempts to explore the shaft — later fully successful in follow-up expeditions</li>
+  </ul>
 </details>
 
 ### 🏭 Ink Stain Area Measurement Device for Printing Industry (freelance)
@@ -387,18 +410,19 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    This project was commissioned by a printing company to simplify and speed up the process of evaluating wear on printing cylinders.  
-    Previously, this required expensive equipment and manual measurements. The new solution involved a custom device with fixed camera distance and lighting conditions, paired with OpenCV-based analysis.
-
-    #### Requirements
-    - Designed and 3D-printed a custom enclosure to maintain consistent camera positioning  
-    - Implemented a Python + OpenCV script to calculate ink stain surface area  
-    - Tuned thresholding, perspective correction, and region isolation for robustness  
-    - Delivered an affordable and replicable device that reduced measurement time and cost
+    <p><strong>Overview</strong></p>
+    <p>This project was commissioned by a printing company to simplify and speed up the process of evaluating wear on printing cylinders.  </p>
+    <p>Previously, this required expensive equipment and manual measurements. The new solution involved a custom device with fixed camera distance and lighting conditions, paired with OpenCV-based analysis.</p>
+    <p><strong>Responsibilities</strong></p>
+    <ul>
+      <li>Designed and 3D-printed a custom enclosure to maintain consistent camera positioning</li>
+      <li>Implemented a Python + OpenCV script to calculate ink stain surface area</li>
+      <li>Tuned thresholding, perspective correction, and region isolation for robustness</li> 
+      <li>Delivered an affordable and replicable device that reduced measurement time and cost</li>
+    </ul>
 </details>
 
-### 🧩 GQuarter: Custom 2D Game Engine & Editor (2 years, personal)
+### 🧩 GQuarter: [Custom 2D Game Engine & Editor](https://github.com/Gieneq/GQuarter) (2 years, personal)
 
 <p align="center">
   <img width="300" alt="GQuarter engine terrain and water rendering" src="res/3dgame.png">
@@ -417,20 +441,19 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    A custom game engine and level editor built in Java using OpenGL and LWJGL. Developed over 2 years as a personal challenge to understand real-time rendering, ECS-like architecture, and cross-cutting systems like audio, terrain generation, and GUI handling.
-
-    The project helped me explore full-engine architecture and taught me key lessons about code structure, coupling, and the value of testing and separation of concerns.
-
-    Heavily inspired by [ThinMatrix YouTube series](https://www.youtube.com/@ThinMatrix).
-
-    #### Project Scope
-    - Custom OpenGL rendering pipeline and shader management
-    - Entity system for managing in-game objects
-    - Terrain rendering and water effects
-    - GUI and event system for in-engine editor tools
-    - Scene serialization and reloading
-    - Basic audio and camera logic
+    <p><strong>Overview</strong></p>
+    <p> A custom game engine and level editor built in Java using OpenGL and LWJGL. Developed over 2 years as a personal challenge to understand real-time rendering, ECS-like architecture, and cross-cutting systems like audio, terrain generation, and GUI handling. </p>
+    <p> The project helped me explore full-engine architecture and taught me key lessons about code structure, coupling, and the value of testing and separation of concerns. </p> 
+    <p> Heavily inspired by <a href="https://www.youtube.com/@ThinMatrix">ThinMatrix YouTube series</a>. </p> 
+    <p><strong>Project Scope</strong></p>
+    <ul>    
+      <li>Custom OpenGL rendering pipeline and shader management</li>
+      <li>Entity system for managing in-game objects</li>
+      <li>Terrain rendering and water effects</li>
+      <li>GUI and event system for in-engine editor tools</li>
+      <li>Scene serialization and reloading</li>
+      <li>Basic audio and camera logic</li>
+    </ul>
 </details>
 
 ### 🧩 (2011) Hexapod robot with Bluetooth control (personal)
@@ -438,6 +461,18 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 <p align="center">
   <img width="300" alt="Walking hexapod remote controller robot" src="res/robot.png">
 </p>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=l720J65UCUo">
+    <img width="300" alt="Walking hexapod remote controller robot" src="https://img.youtube.com/vi/l720J65UCUo/hqdefault.jpg">
+  </a>
+</p>
+  
+<p align="center">
+  <em><a href="https://www.youtube.com/watch?v=l720J65UCUo">Competition video</a> – Wrocław University of Science and Technology</em>
+</p>
+
+[📺 National TV feature – TVP Info](https://www.youtube.com/watch?v=HK7IooV7AvY&ab_channel=TVPInfo)
 
 > **Techs:** C++, Arduino, Inverse kinematics, Bluetooth
 
@@ -450,15 +485,18 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 <details>
   <summary>Details</summary>
-    #### Overview
-    A six-legged walking robot designed and built in high school — combining mechanical engineering, embedded software, and robotics.
+    <p><strong>Overview</strong></p>
+    <p>
+      A six-legged walking robot designed and built in high school — combining mechanical engineering, embedded software, and robotics.
     The project earned awards at robotics tournaments and received national media coverage.
-
-    #### Project Scope
-    - Designed mechanical structure for body and 6 legs
-    - Wrote control algorithms for inverse kinematics and walking gait
-    - Apply Bluetooth communication protocol
-    - Implemented basic autonomous behavior using sensor feedback (feet and head proximity)
+    </p>
+    <p><strong>Project Scope</strong></p>
+    <ul>
+      <li>Designed mechanical structure for body and 6 legs</li>
+      <li>Wrote control algorithms for inverse kinematics and walking gait</li>
+      <li>Implemented Bluetooth communication protocol</li>
+      <li>Implemented basic autonomous behavior using sensor feedback (feet and head proximity)</li>
+    </ul>
 </details>
 
 
