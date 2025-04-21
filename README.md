@@ -24,6 +24,15 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 ### 🧩 [Multiplayer Hide&Seek Game](https://github.com/Gieneq/RustMultiplayer) (personal) 
 
+<p align="center">
+  <img alt="Starting 4 player hide&seek game" src="res/hide_n_seek_opening.gif">
+  </br>
+  <img alt="Gameplay hide&seek" src="res/hide_n_seek_gameplay.gif">
+</p>
+<p align="center">
+  <em> Gameplay 4 players: 3 hiders one seeker </em>
+</p>
+
 > **Techs:** Rust, Tokio, TCP, Serde, WGPU, Clap, thiserror
 
 **Key features:**
