@@ -1,8 +1,8 @@
 # 👋 Hi, I'm Piotr!
 
-I'm a systems engineer with an embedded background — now focused on **Rust backend, tooling, and systems development**.
+I'm a backend / rendering / systems engineer with an embedded background — now focused on **Rust backend, tooling, and systems development**.
 
-To me, systems engineering means owning the full path: From hardware and firmware, through protocols and tooling, to services and user interfaces.  I've designed drivers, built cloud-connected firmware, created CLI and web tools, and automated real-world processes.
+To me, systems engineering means owning the full path: From hardware and firmware, through protocols and tooling, to services and user interfaces.  I've designed ARM drivers, built cloud-connected firmware, created CLI and web tools, and automated real-world processes.
 
 I began exploring Rust in 2023, and **since late 2024**, I’ve been coding in it 4–10 hours daily — both professionally and in personal projects. I’m now shifting fully into **Rust-focused roles** — backend services, infrastructure, or developer tooling — where I can apply the same precision and full-stack thinking embedded demanded, but in modern, scalable systems.
 
