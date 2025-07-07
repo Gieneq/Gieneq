@@ -1,33 +1,65 @@
 # 👋 Hi, I'm Piotr!
 
-I'm a backend / rendering / systems engineer with an embedded background — now focused on **Rust backend, tooling, and systems development**.
+I'm a backend / rendering / systems engineer with an embedded background — now focused on **Rust backend, tooling, and systems development**. I've designed ARM drivers, built cloud-connected firmware, created CLI and web tools, and automated real-world processes.
 
-To me, systems engineering means owning the full path: From hardware and firmware, through protocols and tooling, to services and user interfaces.  I've designed ARM drivers, built cloud-connected firmware, created CLI and web tools, and automated real-world processes.
+### 🦀 [Multiplayer Game](https://github.com/Gieneq/RustMultiplayerGame) 
 
-I began exploring Rust in 2023, and **since late 2024**, I’ve been coding in it 4–10 hours daily — both professionally and in personal projects. I’m now shifting fully into **Rust-focused roles** — backend services, infrastructure, or developer tooling — where I can apply the same precision and full-stack thinking embedded demanded, but in modern, scalable systems.
+<p align="center">
+  🚧
+</p>
+<p align="center">
+  <em> In early development </em>
+</p>
 
-## 🦀 Why Rust?
+> **Techs:** Rust, Tokio, TCP, Axum
 
-- I love **type safety and reliability**
-- I thrive in **low-level, performance-aware environments**
-- I write **tested, maintainable code** with both unit and integration tests
-- I enjoy building **tools and services that actually solve problems**
-- And I’ve built **real systems** already — not tutorials
+**Key features:**
+- Asynchronous server built with Tokio
+- User account management using Axum
+- Character ingame control using TCP
+- ECS world structuring
+- Database adapter for testability
 
-## 🦀 Rust Projects
+<details>
+  <summary>Details</summary>
+  <p><strong>Overview</strong></p>
+  TODO
+</details>
 
-Since 2023, I’ve been learning and building with Rust — both out of curiosity and to stay sharp while working in a company environment.
+### 🧩 [RGB Audio Spectrum Display V3](https://github.com/Gieneq/Audio-Spectrum-Display-ESP32S3)
 
-Starting in late 2024, I dedicated 4–10 hours daily to Rust development, creating production-grade tools for internal use and personal projects across backend, CLI, gamedev, and embedded domains.
+<p align="center">
+  <img width="280" alt="Main RGB Spectrum Display" src="res/ASD_V3.PNG">
+  <br />
+  <img width="280" alt="Main RGB Spectrum Display" src="res/vis.PNG">
+</p>
 
-My focus is on writing high-quality, maintainable code — backed by unit and integration tests — to automate processes, improve reliability, and reduce uncertainty.
+<p align="center">
+  <em>Audio Spectrum remote controller with visualization</em>
+</p>
 
-### 🧩 [Multiplayer Hide&Seek Game](https://github.com/Gieneq/RustMultiplayer) (personal) 
+> **Techs:** C, ESP-IDF, ESP32C3/S3, ESP-NOW WiFi packets, Remote control, DSP, FFT, RGB animation
+
+**Key features:**
+- Custom enclosure & matrix design
+- [ESP32S3](https://github.com/Gieneq/Audio-Spectrum-Display-ESP32S3) responsible for sampling, source selection, FFT, effect drawing, sending pixels colors
+- [ESP32C3](https://github.com/Gieneq/DisplayRadioController399LED) responsible for receiving pixels colors and controlling the matrix
+- Real-time analog/digital audio sampling
+- 2048 FFT float 32 signal processing 
+- 399-pixel WS2812B RGB LED matrix with custom animation effects
+- LCD HMI for gain adjustment and effect selection
+- sources: simulation, microphone, ADC wired
+
+<details>
+  <summary>Details</summary>
+  <p><strong>Overview</strong></p>
+  <p>The continuation of device to visualize audio signal using real-time FFT on an ESP32 platform, driving a 399-pixel RGB LED matrix with animated effects with additional WiFipackets communication.  </p>
+</details>
+
+### 🦀 [Multiplayer Hide&Seek Game](https://github.com/Gieneq/RustMultiplayer) 
 
 <p align="center">
   <img alt="Starting 4 player hide&seek game" src="res/hide_n_seek_opening.gif">
-  </br>
-  <img alt="Gameplay hide&seek" src="res/hide_n_seek_gameplay.gif">
 </p>
 <p align="center">
   <em> Gameplay 4 players: 3 hiders one seeker </em>
@@ -62,7 +94,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 ---
 
-### 🧩 [Diamond Painting Generator](https://github.com/Gieneq/DiamondsImager) (personal) 
+### 🦀 [Diamond Painting Generator](https://github.com/Gieneq/DiamondsImager)
 
 <p align="center">
   <img width="400" alt="Dithering image with palette" src="res/dithering_result.png">
@@ -93,7 +125,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 ---
 
-### 🏭 [ARM GDB External Memory Loader](https://github.com/Gieneq/GDB-Loader) (company)
+### 🦀 [ARM GDB External Memory Loader](https://github.com/Gieneq/GDB-Loader)
 
 <p align="center">
   <img width="300" alt="Uploaded video to external FLASH NOR" src="res/uploaded_example _loader.gif">
@@ -125,33 +157,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 
 ---
 
-### 🏭 Sterilizers production testing backend (company)
-
-> **Techs:** Rust, Actix-Web, Tokio, USB (CDC ACM), Modbus, Serde, Clap
-
-**Key features:**
-- Connects to sterilizers via USB Modbus
-- Remote device control over serial and HTTP
-- Logs and monitors sterilization process
-- Functional testing and validation
-
-<details>
-  <summary>Details</summary>
-  <p><strong>Overview</strong></p>
-  <p>At the final stage of steam sterilizer production, each unit undergoes functionality testing.</p>
-  <p>This Rust-based backend was developed as an experimental alternative to the existing Python backend, aiming to improve maintainability.</p>
-  <p><strong>Responsibilities</strong></p>
-  <ul>
-    <li>Implemented Modbus communication over USB CDC ACM</li>
-    <li>Designed an abstraction layer over Modbus to simplify device control</li>
-    <li>Enabled remote control of multiple devices in parallel</li>
-    <li>Integrated logging and monitoring of sterilization process data for QA</li>
-  </ul>
-</details>
-
-## 🗃️ Past Engineering Projects
-
-### 🏭 Internet-connected steam sterilizer firmware (company)
+### 🦀 Internet-connected steam sterilizer firmware
 
 <p align="center">
   <img width="300" alt="Internet conneted steam sterilizer firmware" src="res/sterilizer.png">
@@ -216,7 +222,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
   </ul>
 </details>
 
-### 🏭 [CMake & Dev Container steam sterilizer firmware](https://github.com/Gieneq/STM32U5_CMake_DevContainer_TouchGFX_Template) (company)
+### 🦀 [CMake & Dev Container steam sterilizer firmware](https://github.com/Gieneq/STM32U5_CMake_DevContainer_TouchGFX_Template)
 
 > **Techs:** C, C++, CMake, Google Test, Linker script, STM32U5, Docker, VS Code, GDB server
 
@@ -246,7 +252,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
   </ul>
 </details>
 
-  ### 🧩 [WiFi AccessPoint E-Ink Image Frame](https://github.com/Gieneq/C3eInkFrame) (personal)
+  ### 🧩 [WiFi AccessPoint E-Ink Image Frame](https://github.com/Gieneq/C3eInkFrame)
 
   <p align="center">
     <img width="300" alt="E-Ink image frame project" src="res/frame_outside.jpg">
@@ -277,7 +283,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
     </ul>
   </details>
 
-### 🧩 [Python RPG game approach](https://github.com/Gieneq/LochPythonRPG) (personal)
+### 🧩 [Python RPG game approach](https://github.com/Gieneq/LochPythonRPG)
 
 <p align="center">
   <img width="300" alt="Internet conneted steam sterilizer firmware" src="res/pythongame.gif">
@@ -310,12 +316,10 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
     </ul>
 </details>
 
-### 🧩 [RGB Audio Spectrum Display](https://github.com/Gieneq/Audio-Spectrum-Display) (personal)
+### 🧩 [RGB Audio Spectrum Display](https://github.com/Gieneq/Audio-Spectrum-Display)
 
 <p align="center">
   <img width="280" alt="Main RGB Spectrum Display" src="res/asd.PNG">
-  <br />
-  <img width="280" alt="LCD control unit for spectrum display" src="res/vis.PNG">
 </p>
 <p align="center">
   <em>30+ ⭐ on GitHub · Featured on Instructables with 36k+ views and 190+ likes  
@@ -329,29 +333,16 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
 - Real-time analog/digital audio sampling
 - FFT signal processing on microcontroller
 - 399-pixel WS2812B RGB LED matrix with custom animation effects
-- LCD HMI for gain adjustment and effect selection
-- Fully custom PCB and 3D-printed enclosure
 - Planned support for raw WiFi 802.11 audio streaming (in development)
 
 <details>
   <summary>Details</summary>
   <p><strong>Overview</strong></p>
   <p>This project visualizes audio input using real-time FFT on an ESP32 platform, driving a 399-pixel RGB LED matrix with animated effects.  </p>
-  <p>The latest version includes an LCD display for control and settings, making it fully standalone. </p> 
-  <p>It’s designed for living room aesthetics, performance, and modular expandability — including future raw WiFi-based audio streaming directly to the device.</p>
-  <p><strong>Project Scope</strong></p>
-  <ul>
-    <li>Designed signal chain for analog/digital audio sampling</li>
-    <li>Wrote fixed-point FFT and windowing implementation (optimized for MCU)</li>
-    <li>Implemented a visual engine for multiple spectrum and waveform styles</li>
-    <li>Built a custom UI using LCD and rotary input</li>
-    <li>Created enclosure using 3D printing and transparent paneling</li>
-    <li>Managed timing, memory, and DMA for stable animation performance</li>
-    <li>Shared project publicly with detailed build instructions and firmware</li>
-  </ul>
+  <p>It’s designed for living room aesthetics, performance, and modular expandability</p>
 </details>
 
-### 🧩 Bluetooth Macro Keyboard (personal)
+### 🧩 Bluetooth Macro Keyboard
 
 > **Techs:** C++, ESP32, Bluetooth
 
@@ -372,7 +363,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
   </ul>
 </details>
 
-### 🏭 Remote-Controlled Exploration Boat for Historical Research (company)
+### 🏭 Remote-Controlled Exploration Boat for Historical Research
 
 <p align="center">
   <img width="400" alt="Representative mine shaft view" src="res/repr_luban.PNG">
@@ -404,7 +395,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
   </ul>
 </details>
 
-### 🏭 Ink Stain Area Measurement Device for Printing Industry (freelance)
+### 🏭 Ink Stain Area Measurement Device for Printing Industry
 
 <p align="center">
   <img width="300" alt="Ink Stain Measurement Device 3D model" src="res/opencvtool.png">
@@ -431,7 +422,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
     </ul>
 </details>
 
-### 🧩 GQuarter: [Custom 2D Game Engine & Editor](https://github.com/Gieneq/GQuarter) (2 years, personal)
+### 🧩 GQuarter: [Custom 2D Game Engine & Editor](https://github.com/Gieneq/GQuarter)
 
 <p align="center">
   <img width="300" alt="GQuarter engine terrain and water rendering" src="res/3dgame.png">
@@ -465,7 +456,7 @@ My focus is on writing high-quality, maintainable code — backed by unit and in
     </ul>
 </details>
 
-### 🧩 (2011) Hexapod robot with Bluetooth control (personal)
+### 🧩 (2011) Hexapod robot with Bluetooth control
 
 <p align="center">
   <img width="300" alt="Walking hexapod remote controller robot" src="res/robot.png">
